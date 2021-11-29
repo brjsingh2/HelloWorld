@@ -7,7 +7,7 @@ trigger:
 - master
 
 pool:
-  vmImage: brjAzDevPool
+  brjAzDevPool
 
 steps:
 - task: Maven@3
