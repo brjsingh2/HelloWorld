@@ -30,7 +30,7 @@ steps:
   displayName: 'Copy Files to: $(Pipeline.Workspace)'
   inputs:
     SourceFolder: '$(system.defaultworkingdirectory)'
-    Contents: '**/*.jar'
+    Contents: '**/restService*.jar'
     TargetFolder: '$(Pipeline.Workspace)'
     
 - task: PublishPipelineArtifact@1
